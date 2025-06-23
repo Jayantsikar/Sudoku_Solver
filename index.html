@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sudoku-app">
+        <header class="app-header">
+            <h1>Sudoku Solver</h1>
+        </header>
+        
+        <main class="app-content">
+            <div class="sudoku-container">
+                <table id="sudoku-board"></table>
+            </div>
+            
+            <div class="controls">
+                <div class="action-buttons">
+                    <button id="solve-btn" class="btn primary">Solve Sudoku</button>
+                    <button id="clear-btn" class="btn">Clear Board</button>
+                    <button id="example-btn" class="btn">Load Example</button>
+                </div>
+                
+                <div class="difficulty-controls">
+                    <h3>Difficulty:</h3>
+                    <div class="difficulty-options">
+                        <select id="difficulty" class="difficulty-select">
+                            <option value="easy">Easy</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                        <button id="generate-btn" class="btn primary">Generate Puzzle</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
